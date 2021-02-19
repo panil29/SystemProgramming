@@ -1,0 +1,4 @@
+The program will not execute because when for loop executing for first time, We are dividing n with i which is zero.
+when for loop executes for the first time and diving by zero gives a compile time error.
+
+

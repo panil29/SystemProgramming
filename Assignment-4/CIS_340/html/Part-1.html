@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Part-1</title>
+
+</head>
+<body>
+<p> <h5>
+<p>
+        1)Package File:
+Package file is generally a folder that consists of compiled class files. These class files are not capable of executing as the classes inside a package.
+<p>
+Program distribution in package file :
+Package refers to a group of set of related classes and interfaces.This package contains a src folder to hold the program files (eg : .java files) and a bin folder to 
+hold class files (eg : .class files) of a project application. Package file does not contain main() method within it.
+package files --> .java files and .class files
+</p>
+          Archive File:
+Archive files is the compressed version of a project application that includes group of packages. [i.e It is generally of type zipped version with all the classes and its dependent libraries.] Archive file is a self executing file. So, it helps to deploy the application in a target system and also facilitates it easy mobility.
+<p>
+Program distribution in archive file :
+Archive file can contain classes within several folders but it must have a class file that includes the main() method.
+jar file --> group of packages --> .java file and .class files
+</p>
+</p>
+<p>
+2)
+System calls that return file descriptors:
+There are following system calls that return file descriptors:
+<p>
+1. Create: 
+Used to Create a new empty file.
+Syntax in C language:
+int creat(char *filename, mode_t mode)
+</p>
+<p>
+2. open:  
+Used to Open the file for reading, writing or both.
+Syntax in C language
+#include<sys/types.h>
+#includ<sys/stat.h>
+#include <fcntl.h>
+int open (const char* Path, int ags [, int mode ]);
+</p>
+<p>
+3. close: 
+Tells the operating system you are done with a file descriptor and Close the file which pointed by
+fd.
+Syntax in C language
+#include <fcntl.h>
+int close(int fd);
+</p>
+<p>
+4. read: From the file indicated by the file descriptor fd, the read() function reads cnt bytes of input into the memory area indicated by buf. A successful read() updates the access time for the file.
+Syntax in C language
+size_t read (int fd, void* buf, size_t cnt);
+</p>
+</p>
+<p>
+3)
+         Manual contains the information of the functions or the API's which are available for the program along with that it contains the functionality of the functions and the 
+ purpose for which they can be used.Header files contain the declarations of the functions whose denitions would be there in the source files,here we do not know about the functionality 
+of the function.
+    when we just want to use the function directly then we can use the manual pages based on the functionality of the functions and we can use header les when as a programmer we want to make some new functionality then we would declare the function inside the header file and dene the functionality of the function in the source file.
+</p>
+</h5></a>
+</body>
+</html>

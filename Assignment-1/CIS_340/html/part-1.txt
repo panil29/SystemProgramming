@@ -1,0 +1,38 @@
+A)	If we want to allow a Debug a program, we had to generate the debugging information when we are trying to compile to it. Basically, the Debugging information will be stored in the object file. The information describes about the data types of each and every variable and it correspondence between source line numbers and also executable code.
+
+If we are requesting debugging information or trying to execute the code in debug mode, we need to specify ‘-g’ when we are running the compiler. Many ‘C’ Compilers will not able to handle the’-g’ and’-o’ options. In general, the ‘C’ program needs to be compiled using GCC, LLVM etc. By giving ‘-g’ flag for the debug compilation purpose. There after it will debug the program via debugger such as GDB. The arguments will first be generated when the program is debugged under GDB and later the program is debugged. The GNU ‘C’ Compiler(GCC) is used to compile a program whether it is with ‘-g’ or without ‘-O’ by making it to debug the optimized code.
+
+Two things:
+•The compiler emits a mapping from the line numbers in the program to the assembly instruction/s it maps to. As a result, the debugger only does a reverse map of this showing the program source line corresponding to the instruction indeed being executed. 
+•The compiler emits information on the memory location or register reference where a variable resides at a particular point in the program execution. GDB knows where the variable is currently residing which could be in a register or memory. As compiler does register allocation, it knows where a variable is located at a particular point in the program. 
+•Compiler expresses debug-info for debuggers to use.
+ 
+B)  	
+The largest signed number that can be represented using 77 bits is :(2^76-1)
+The largest unsigned number that can be represented using 77 bits is :(2^77-1)
+
+C)
+1) 0011100010010110
+ Since the number starts with 0, this means that the number is positive, and the 2's complement is the same as the binary representation of the decimal number. 00111000100101102  =  1448610
+2)  1000000010100011 
+Since the number starts with 0, this means that the number is negative. The binary representation of the magnitude of the number is achieved by: 
+1s complement of 1000000010100011 = 0111111101011100 (by inverting 1’s to 0’s vice versa)
+2s complement of 0111111101011100 = 0111111101011101 (by adding 1 bit) 
+01111111010111012 = 3260410
+Decimal number is (-3260410)
+
+D)
+When i =1, if condition i % 5 > 1 will return false so if statement will not execute. So i = 1 and j = 0 will print Since we mentioned the bit operator in increment condition i value will be 2 for second iteration.
+When i =2, if condition i % 5 > 1 will return true so if statement will execute. So i = 2 and j = 2 will print Since we mentioned the bit operator in increment condition i value will be 4 for third iteration. 
+When i =4, if condition i % 5 > 1 will return true so if statement will execute. So i = 4 and j = 6 will print Since we mentioned the bit operator in increment condition i value will be 8 for fourth iteration. 
+When i =8, if condition i % 5 > 1 will return true so if statement will execute. So i = 8 and j = 14 will print Since we mentioned the bit operator in increment condition i value will be 16 for fth iteration. 
+When i =16, if condition i % 5 > 1 will return false so if statement will not execute. So i = 16 and j = 14 will print Since we mentioned the bit operator in increment condition i value will be 32 for sixth iteration.
+When i =32, if condition i % 5 > 1 will return true so if statement will execute. So i = 32 and j = 46 will print Since we mentioned the bit operator in increment condition i value will be 64 for seventh iteration. 
+When i =64, if condition i % 5 > 1 will return true so if statement will execute. So i = 64 and j = 110 will print Since we mentioned the bit operator in increment condition i value will be 128 for eighth iteration. for will terminate since i value crosses max range 100 value.
+1 0 
+2 2
+4 6
+8 14 
+16 14 
+32 46
+64 110
